@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Aula01/Aula01.iml" filepath="$PROJECT_DIR$/Aula01/Aula01.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/exercicio-java-caldeira.iml" filepath="$PROJECT_DIR$/.idea/exercicio-java-caldeira.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aula00/HelloWorld/HelloWorld.iml" filepath="$PROJECT_DIR$/aula00/HelloWorld/HelloWorld.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aula00/Exercicio01/LeEImprimeNome.iml" filepath="$PROJECT_DIR$/aula00/Exercicio01/LeEImprimeNome.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/exercicios-java-caldeira.iml" filepath="$PROJECT_DIR$/.idea/exercicios-java-caldeira.iml" />
     </modules>
   </component>
 </project>
