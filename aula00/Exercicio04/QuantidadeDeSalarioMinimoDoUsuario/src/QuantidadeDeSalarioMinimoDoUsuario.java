@@ -12,6 +12,6 @@ public class QuantidadeDeSalarioMinimoDoUsuario {
 
         double quantidadeDeSalarioMinimo = salarioUsuario / salarioMinimo;
 
-        System.out.println("Você recebe " + String.format("%,.2f", (salarioUsuario / salarioMinimo)) + " salário(s) mínimo(s)");
+        System.out.println("Você recebe " + String.format("%,.2f", quantidadeDeSalarioMinimo) + " salário(s) mínimo(s)");
     }
 }
