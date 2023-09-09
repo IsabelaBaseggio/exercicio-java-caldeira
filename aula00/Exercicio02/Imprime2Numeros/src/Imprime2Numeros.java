@@ -10,6 +10,6 @@ public class Imprime2Numeros {
         System.out.print("Digite o segundo número: ");
         int segundoNumero = scan.nextInt();
 
-        System.out.println("Os número digitados são " + primeiroNumero + " e " + segundoNumero);
+        System.out.println("Os número digitados foram " + primeiroNumero + " e " + segundoNumero);
     }
 }
