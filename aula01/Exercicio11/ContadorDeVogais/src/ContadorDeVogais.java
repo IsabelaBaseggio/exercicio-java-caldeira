@@ -15,7 +15,7 @@ public class ContadorDeVogais {
 
         for (String c : palavraArray) {
             if ("a".equalsIgnoreCase(c) || "e".equalsIgnoreCase(c) || "i".equalsIgnoreCase(c) || "o".equalsIgnoreCase(c) || "u".equalsIgnoreCase(c)) {
-                quantidadeVogais += 1;
+               quantidadeVogais += 1;
             }
         }
 

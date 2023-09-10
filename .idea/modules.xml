@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/aula01/Exercício13/CalculaFatorial/CalculaFatorial.iml" filepath="$PROJECT_DIR$/aula01/Exercício13/CalculaFatorial/CalculaFatorial.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aula01/Exercicio13/CalculaFatorial/CalculaFatorial.iml" filepath="$PROJECT_DIR$/aula01/Exercicio13/CalculaFatorial/CalculaFatorial.iml" />
       <module fileurl="file://$PROJECT_DIR$/aula01/Exercicio09/CalculaIdadeAnoNascimento/CalculaIdadeAnoNascimento.iml" filepath="$PROJECT_DIR$/aula01/Exercicio09/CalculaIdadeAnoNascimento/CalculaIdadeAnoNascimento.iml" />
-      <module fileurl="file://$PROJECT_DIR$/aula01/Exercicio10/CelsiusParaFahrenehit/CelsiusParaFahrenehit.iml" filepath="$PROJECT_DIR$/aula01/Exercicio10/CelsiusParaFahrenehit/CelsiusParaFahrenehit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aula01/Exercicio10/CelsiusParaFahrenheit/CelsiusParaFahrenheit.iml" filepath="$PROJECT_DIR$/aula01/Exercicio10/CelsiusParaFahrenheit/CelsiusParaFahrenheit.iml" />
       <module fileurl="file://$PROJECT_DIR$/aula01/Exercicio07/Consorcio/Consorcio.iml" filepath="$PROJECT_DIR$/aula01/Exercicio07/Consorcio/Consorcio.iml" />
       <module fileurl="file://$PROJECT_DIR$/aula01/Exercicio11/ContadorDeVogais/ContadorDeVogais.iml" filepath="$PROJECT_DIR$/aula01/Exercicio11/ContadorDeVogais/ContadorDeVogais.iml" />
-      <module fileurl="file://$PROJECT_DIR$/aula01/Exercicio12/ConverdorDolarParaEuroOuReal/ConverdorDolarParaEuroOuReal.iml" filepath="$PROJECT_DIR$/aula01/Exercicio12/ConverdorDolarParaEuroOuReal/ConverdorDolarParaEuroOuReal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aula01/Exercicio12/ConversorDolarParaEuroOuReal/ConversorDolarParaEuroOuReal.iml" filepath="$PROJECT_DIR$/aula01/Exercicio12/ConversorDolarParaEuroOuReal/ConversorDolarParaEuroOuReal.iml" />
       <module fileurl="file://$PROJECT_DIR$/aula01/Exercicio08/FilaPrioritaria/FilaPrioritaria.iml" filepath="$PROJECT_DIR$/aula01/Exercicio08/FilaPrioritaria/FilaPrioritaria.iml" />
       <module fileurl="file://$PROJECT_DIR$/aula01/HelloWorld/HelloWorld.iml" filepath="$PROJECT_DIR$/aula01/HelloWorld/HelloWorld.iml" />
       <module fileurl="file://$PROJECT_DIR$/aula01/Exercicio02/Imprime2Numeros/Imprime2Numeros.iml" filepath="$PROJECT_DIR$/aula01/Exercicio02/Imprime2Numeros/Imprime2Numeros.iml" />
