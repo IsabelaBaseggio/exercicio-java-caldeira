@@ -4,7 +4,7 @@ import java.util.TimeZone;
 
 public class CalculaIdadeAnoNascimento {
     public static void main(String[] args) {
-        int idade = 0;
+        int idade;
 
         Calendar calendario = Calendar.getInstance(TimeZone.getTimeZone("Brazil/East"));
         int anoAtual = calendario.get(Calendar.YEAR);
