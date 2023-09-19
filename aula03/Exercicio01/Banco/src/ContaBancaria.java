@@ -20,6 +20,27 @@ public class ContaBancaria {
         this.endereco = endereco;
     }
 
+    public boolean validarCpf(String cpf) {
+        int[] cpfArray = new int[11];
+
+        int primeiroDigito = 0;
+        int segundoDIgito = 0;
+
+        if(cpf.length() < 11){
+            return false;
+        }
+
+        for(int i = 0; i < 11; i++){
+            cpfArray[i] = Integer.parseInt(String.valueOf(cpf.charAt(i)));
+        }
+
+        for(int i = 10; i > 1; i--){
+            primeiroDigito +=
+        }
+
+        return false;
+    }
+
     public void verificarSaldo() {
         System.out.println("Saldo: R$" + this.saldo);
     }
@@ -54,21 +75,26 @@ public class ContaBancaria {
         }
     }
 
-    public void realizarPix(double valor) {
-        if (valor > 0 && valor <= this.saldo) {
+    public void realizarPix(String tipoChave, ContaBancaria chave, double valor) {
+        boolean tipoChaveEValido = tipoChave.equalsIgnoreCase("cpf") || tipoChave.equalsIgnoreCase("cnpj") || tipoChave.equalsIgnoreCase("email") || tipoChave.equalsIgnoreCase("celular") || tipoChave.equalsIgnoreCase("chave aleatória");
+
+        if (tipoChaveEValido || valor > 0 && valor <= this.saldo) {
             this.saldo -= valor;
+            chave.saldo += valor;
             System.out.println("Pix realizado com sucesso " + this.horarioAtualFormatado);
         } else {
             System.out.println("Erro ao realizar pix.");
         }
     }
 
-    public void transferir(ContaBancaria destino, double valor) {
+    public void transferir(ContaBancaria contaDestino, double valor) {
         int hora = LocalTime.now().getHour();
         int minuto = LocalTime.now().getMinute();
         int segundo = LocalTime.now().getSecond();
 
         if(valor > 0 && valor <= this.saldo && hora >= 7 && hora < 19 || (hora == 19 && minuto == 00 && segundo == 00)) {
+            contaDestino.saldo += valor;
+            this.saldo -= valor;
             System.out.println("Transferência realizada com sucesso!");
         } else {
             System.out.println("Erro ao realizar transferencia.");
