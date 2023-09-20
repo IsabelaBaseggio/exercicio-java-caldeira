@@ -1,5 +1,8 @@
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
 
 public class ContaBancaria {
     private String nome;
@@ -17,6 +20,14 @@ public class ContaBancaria {
 
     private boolean contaAtiva = true;
 
+    private ArrayList<String> historicoConta = new ArrayList<String>();
+
+    private LocalDateTime dataMovimentacao = LocalDateTime.now();
+
+    private DateTimeFormatter dataFormato = DateTimeFormatter.ofPattern("dd/MM/YYYY HH:mm:ss");
+
+    private String dataMovimentacaoFormatado = this.dataMovimentacao.format(this.dataFormato);
+
 
     public ContaBancaria( String nome, String cpf, String endereco) {
         if (this.validarCpf(cpf)) {
@@ -26,6 +37,8 @@ public class ContaBancaria {
                 ContaBancaria.contaGerada += 10;
                 this.identificadorConta = ContaBancaria.contaGerada;
                 this.endereco = endereco;
+                this.atualizarDataMovimentacao();
+                this.historicoConta.add(this.dataMovimentacaoFormatado + "          " + "Conta criada");
             } else {
                 System.out.println("Erro ao abrir conta.");
             }
@@ -92,7 +105,7 @@ public class ContaBancaria {
     }
 
 
-    public  String verificarHorario() {
+    public String verificarHorario() {
         if (!this.contaAtiva) {
             return "Erro ao realizar operação. Conta inativa.";
         }
@@ -101,11 +114,19 @@ public class ContaBancaria {
         return this.horarioAtualFormatado;
     }
 
+    private void atualizarDataMovimentacao() {
+        this.dataMovimentacao = LocalDateTime.now();
+        this.dataFormato = DateTimeFormatter.ofPattern("dd/MM/YYYY HH:mm:ss");
+        this.dataMovimentacaoFormatado = this.dataMovimentacao.format(this.dataFormato);
+    }
+
     public void sacar(double valor) {
         if (this.contaAtiva) {
             if(valor > 0 && valor <= this.saldo) {
                 this.saldo -= valor;
                 System.out.println("Saque realizado com sucesso!");
+                this.atualizarDataMovimentacao();
+                this.historicoConta.add(this.dataMovimentacaoFormatado + "          " + "Saque: -R$" + String.format("%,.2f", valor));
             } else {
                 System.out.println("Erro ao realizar saque.");
             }
@@ -119,6 +140,8 @@ public class ContaBancaria {
             if(valor > 0) {
                 this.saldo += valor;
                 System.out.println("Depósito realizado com sucesso!");
+                this.atualizarDataMovimentacao();
+                this.historicoConta.add(this.dataMovimentacaoFormatado + "          " + "Depósito: R$" + String.format("%,.2f", valor));
             } else {
                 System.out.println("Erro ao realizar depósito.");
             }
@@ -135,6 +158,8 @@ public class ContaBancaria {
                 this.saldo -= valor;
                 chave.saldo += valor;
                 System.out.println("Pix realizado com sucesso " + this.horarioAtualFormatado);
+                this.atualizarDataMovimentacao();
+                this.historicoConta.add(this.dataMovimentacaoFormatado + "          " + "Pix: -R$" + String.format("%,.2f", valor));
             } else {
                 System.out.println("Erro ao realizar pix.");
             }
@@ -153,6 +178,8 @@ public class ContaBancaria {
                 contaDestino.saldo += valor;
                 this.saldo -= valor;
                 System.out.println("Transferência realizada com sucesso!");
+                this.atualizarDataMovimentacao();
+                this.historicoConta.add(this.dataMovimentacaoFormatado + "          " + "Transferência: -R$" + String.format("%,.2f", valor));
             } else {
                 System.out.println("Erro ao realizar transferencia.");
             }
@@ -186,6 +213,16 @@ public class ContaBancaria {
             System.out.println("Erro ao realizar operação. Conta inativa.");
         }
     }
+
+    public void mostrarHistoricoConta() {
+        if(this.contaAtiva) {
+            for(int i = 0; i < this.historicoConta.size(); i++){
+                System.out.println(this.historicoConta.get(i));
+            }
+            System.out.println("Saldo atual:                 R$" + String.format("%,.2f", this.saldo));
+        }
+    }
+
 
     public void fecharConta() {
         if(this.contaAtiva) {

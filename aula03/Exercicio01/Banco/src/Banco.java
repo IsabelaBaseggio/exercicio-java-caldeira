@@ -14,9 +14,9 @@ public class Banco {
 
         conta2.depositar(100);
 
-        conta.fecharConta();
-
         conta.depositar(100);
+
+        conta.mostrarHistoricoConta();
 
     }
 }
