@@ -1,4 +1,3 @@
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
@@ -14,19 +13,13 @@ public class ContaBancaria {
     private String banco = "Agibank";
     private String endereco;
     private double saldo = 0;
-    private LocalTime horarioAtual = LocalTime.now();
-    private DateTimeFormatter horarioFormato = DateTimeFormatter.ofPattern("HH:mm:ss");
-    private String horarioAtualFormatado = this.horarioAtual.format(this.horarioFormato);
+    private String horarioAtualFormatado;
 
     private boolean contaAtiva = true;
 
     private ArrayList<String> historicoConta = new ArrayList<String>();
 
-    private LocalDateTime dataMovimentacao = LocalDateTime.now();
-
-    private DateTimeFormatter dataFormato = DateTimeFormatter.ofPattern("dd/MM/YYYY HH:mm:ss");
-
-    private String dataMovimentacaoFormatado = this.dataMovimentacao.format(this.dataFormato);
+    private String dataMovimentacaoFormatado;
 
 
     public ContaBancaria( String nome, String cpf, String endereco) {
@@ -37,6 +30,7 @@ public class ContaBancaria {
                 ContaBancaria.contaGerada += 10;
                 this.identificadorConta = ContaBancaria.contaGerada;
                 this.endereco = endereco;
+                this.atualizarHorario();
                 this.atualizarDataMovimentacao();
                 this.historicoConta.add(this.dataMovimentacaoFormatado + "          " + "Conta criada");
             } else {
@@ -99,9 +93,9 @@ public class ContaBancaria {
     }
 
     private void atualizarHorario(){
-        this.horarioAtual = LocalTime.now();
-        this.horarioFormato = DateTimeFormatter.ofPattern("HH:mm:ss");
-        this.horarioAtualFormatado = this.horarioAtual.format(this.horarioFormato);
+        LocalTime horarioAtual = LocalTime.now();
+        DateTimeFormatter horarioFormato = DateTimeFormatter.ofPattern("HH:mm:ss");
+        this.horarioAtualFormatado = horarioAtual.format(horarioFormato);
     }
 
 
@@ -115,9 +109,9 @@ public class ContaBancaria {
     }
 
     private void atualizarDataMovimentacao() {
-        this.dataMovimentacao = LocalDateTime.now();
-        this.dataFormato = DateTimeFormatter.ofPattern("dd/MM/YYYY HH:mm:ss");
-        this.dataMovimentacaoFormatado = this.dataMovimentacao.format(this.dataFormato);
+        LocalDateTime dataMovimentacao = LocalDateTime.now();
+        DateTimeFormatter dataFormato = DateTimeFormatter.ofPattern("dd/MM/YYYY HH:mm:ss");
+        this.dataMovimentacaoFormatado = dataMovimentacao.format(dataFormato);
     }
 
     public void sacar(double valor) {
