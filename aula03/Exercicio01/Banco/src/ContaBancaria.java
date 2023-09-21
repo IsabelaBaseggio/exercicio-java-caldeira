@@ -223,7 +223,6 @@ public class ContaBancaria {
 
     public void aplicarJuros() {
         int dia = LocalDate.now().getDayOfMonth();
-        dia = 1;
         if (this.contaAtiva && dia == 1) {
             this.saldo *= ContaBancaria.taxaJuros;
             this.atualizarDataMovimentacao();
@@ -233,7 +232,6 @@ public class ContaBancaria {
 
     public void aplicarTaxaManutencao() {
         int dia = LocalDate.now().getDayOfMonth();
-        dia = 1;
         if (this.contaAtiva && dia == 1) {
             this.saldo -= ContaBancaria.taxaManutencao;
             this.atualizarDataMovimentacao();
