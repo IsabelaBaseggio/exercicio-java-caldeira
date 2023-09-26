@@ -14,7 +14,7 @@ public class Impressao {
     }
     
     public void listarDocumentos(){
-        if (this.listaDeImpressao.size() > 0) {
+        if (!this.listaDeImpressao.isEmpty()) {
             for (int i = 0; i < listaDeImpressao.size(); i++){
                 System.out.println("[" + (i+1) + "] " + listaDeImpressao.get(i).getNome() + " - " + listaDeImpressao.get(i).getNumeroDePaginas() + " página(s).");
             }
