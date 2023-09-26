@@ -5,15 +5,24 @@ public class ListaDeTarefas {
 
     private static ArrayList<Tarefa> listaDeTarefas = new ArrayList<>();
 
-    private Scanner scan = new Scanner(System.in);
+
 
     public ListaDeTarefas(){}
 
-    public void adicionarTarefas(Tarefa tarefa) {
+    public void adicionarTarefa(String titulo, String data, String descricao) {
+        Tarefa tarefa = new Tarefa(titulo, data, descricao);
         listaDeTarefas.add(tarefa);
     }
 
+    public void listarTarefas() {
+        for (Tarefa tarefa : listaDeTarefas) {
+            System.out.println(tarefa.getData() + " - " + tarefa.getTitulo() + ": " + tarefa.getDescricao());
+        }
+    }
+
     public void excluirTarefa() {
+        Scanner scan = new Scanner(System.in);
+
         for (int i = 0; i < listaDeTarefas.size(); i++) {
             System.out.println("[" + (i+1) + "] " + listaDeTarefas.get(i).getData() + " - " + listaDeTarefas.get(i).getTitulo() + ": " + listaDeTarefas.get(i).getDescricao());
         }
@@ -32,12 +41,6 @@ public class ListaDeTarefas {
             System.out.println("Tarefa excluída com sucesso!");
         } else {
             System.out.println("Operação cancelada com sucesso!");
-        }
-    }
-
-    public void listarTarefas() {
-        for (Tarefa tarefa : listaDeTarefas) {
-            System.out.println(tarefa.getData() + " - " + tarefa.getTitulo() + ": " + tarefa.getDescricao());
         }
     }
 }
