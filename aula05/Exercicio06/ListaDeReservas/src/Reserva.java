@@ -5,70 +5,28 @@ public class Reserva {
     private String nome;
     private String cpf;
     private String local;
+
+    private int quantidadeDePassagens;
     private String dataEntrada;
     private String dataSaida;
 
-    public Reserva(String nome, String cpf, String local) {
-        if(validarCPF(cpf) && !nome.isEmpty() && !local.isEmpty()) {
+    public Reserva(String nome, String cpf, String local, int quantidadeDePassagens) {
             this.nome = nome;
             this.cpf = cpf;
             this.local = local;
-        } else {
-            System.out.println("CPF inválido.");
-        }
+            this.quantidadeDePassagens = quantidadeDePassagens;
     }
 
-    private boolean validarCPF(String cpf) {
-        if(cpf.length() != 11 || cpf.equals("00000000000")){
-            return false;
-        }
-
-        int[] cpfArray = new int[11];
-
-        int primeiroDigito = 0;
-        int segundoDigito = 0;
-
-        for(int i = 0; i < 11; i++){
-            cpfArray[i] = Integer.parseInt(String.valueOf(cpf.charAt(i)));
-        }
-
-        for(int i = 10; i > 1; i--){
-            primeiroDigito += i * cpfArray[10 - i];
-        }
-
-        primeiroDigito *= 10;
-
-        if(primeiroDigito % 11 == cpfArray[9]) {
-
-            for (int i = 11; i > 1; i--) {
-                segundoDigito += i * cpfArray[11 - i];
-            }
-
-            segundoDigito *= 10;
-
-            if (segundoDigito % 11 != cpfArray[10]) {
-                return false;
-            }
-
-        } else {
-
-            return false;
-
-        }
-
-        return true;
-    }
 
     public void setDataEntrada(){
         Scanner scan = new Scanner(System.in);
-        System.out.print("Informe a data de entrada.");
+        System.out.println("Informe a data de entrada.");
         System.out.print("[dd/mm/aaaa]: ");
         String dataEntrada = scan.nextLine();
-        dataEntrada = dataEntrada.replaceAll("/", "");
 
-        while (dataEntrada.length() != 8 && !validarData(dataEntrada)) {
+        while (dataEntrada.length() != 10 || !this.validarData(dataEntrada)) {
             System.out.println("Data inválida. Tente novamente.");
-            System.out.print("[dd/mm/aaaa]: ");
+            System.out.print("Data de entrada [dd/mm/aaaa]: ");
             dataEntrada = scan.nextLine();
         }
 
@@ -77,26 +35,31 @@ public class Reserva {
 
     public void setDataSaida(){
         Scanner scan = new Scanner(System.in);
-        System.out.println("Informa a data de saída ou deixe o campo vazio.");
+        System.out.println("Informa a data de saída ou digite X para deixar a data em branco.");
         System.out.print("[dd/mm/aaaa]: ");
         String dataSaida = scan.nextLine();
 
-        dataSaida = dataSaida.replaceAll("/", "");
-
-        while ((dataSaida.length() != 8 && !this.validarData(dataSaida) && !this.compararDatas(dataSaida)) || !dataSaida.isEmpty()) {
-            System.out.println("Data inválida. Tente novamente.");
-            System.out.print("[dd/mm/aaaa]: ");
-            dataSaida = scan.nextLine();
-        }
-
-        if (!dataSaida.isEmpty()) {
+        if ("X".equalsIgnoreCase(dataSaida)){
             this.dataSaida = dataSaida;
         } else {
-            this.dataSaida = "X";
+            while (dataSaida.length() != 10 || !this.validarData(dataSaida) || !this.compararDatas(dataSaida)) {
+                System.out.println("Data inválida. Tente novamente.");
+                System.out.print("Data de Saída [dd/mm/aaaa]: ");
+                dataSaida = scan.nextLine();
+
+                if ("X".equalsIgnoreCase(dataSaida)){
+                    break;
+                }
+            }
+
+            this.dataSaida = dataSaida;
         }
+
+
     }
 
     private boolean validarData(String data) {
+        data = data.replaceAll("/", "");
         LocalDate dataAtual = LocalDate.now();
         int dia = Integer.parseInt(data.substring(0, 2));
         int mes = Integer.parseInt(data.substring(2, 4));
@@ -105,24 +68,25 @@ public class Reserva {
         int diaAtual = dataAtual.getDayOfMonth();
         int mesAtual = dataAtual.getMonthValue();
         int anoAtual = dataAtual.getYear();
+
         if (ano > anoAtual){
             return true;
         } else if (ano == anoAtual) {
             if (mes > mesAtual) {
                 return true;
             } else if (mes == mesAtual) {
-                if (dia >= diaAtual) {
-                    return true;
-                }
+                return dia >= diaAtual;
             }
         }
         return false;
     }
 
     private boolean compararDatas(String dataSaida) {
-        int diaEntrada = Integer.parseInt(this.dataEntrada.substring(0, 2));
-        int mesEntrada = Integer.parseInt(this.dataEntrada.substring(2, 4));
-        int anoEntrada = Integer.parseInt(this.dataEntrada.substring(4, 8));
+        dataSaida = dataSaida.replaceAll("/", "");
+        String dataEntrada = this.dataEntrada.replaceAll("/", "");
+        int diaEntrada = Integer.parseInt(dataEntrada.substring(0, 2));
+        int mesEntrada = Integer.parseInt(dataEntrada.substring(2, 4));
+        int anoEntrada = Integer.parseInt(dataEntrada.substring(4, 8));
 
         int diaSaida = Integer.parseInt(dataSaida.substring(0,2));
         int mesSaida = Integer.parseInt(dataSaida.substring(2, 4));
@@ -134,9 +98,7 @@ public class Reserva {
             if (mesSaida > mesEntrada) {
                 return true;
             } else if (mesSaida == mesEntrada) {
-                if (diaSaida >= diaEntrada) {
-                    return true;
-                }
+                return diaSaida >= diaEntrada;
             }
         }
         return false;
@@ -144,18 +106,29 @@ public class Reserva {
 
     public void alterarDataEntrada(){
         this.setDataEntrada();
-        if ("X".equals(this.dataSaida)){
             this.setDataSaida();
-        }
         System.out.println("Data(s) alterada(s) com sucesso!");
+    }
+
+    public void alterarQuantidadeDePassagens(int novaQuantidade){
+        this.quantidadeDePassagens = novaQuantidade;
+        System.out.println("Quantidade de passagens alterada!");
     }
 
     public String getNome() {
         return nome;
     }
 
+    public String getCpf() {
+        return cpf;
+    }
+
     public String getLocal() {
         return local;
+    }
+
+    public int getQuantidadeDePassagens() {
+        return quantidadeDePassagens;
     }
 
     public String getDataEntrada() {
@@ -171,7 +144,7 @@ public class Reserva {
         System.out.print("Informe o  novo local: ");
         String novoLocal = scan.nextLine();
 
-        while (!novoLocal.isEmpty()) {
+        while (novoLocal.isEmpty()) {
             System.out.println("Dado inválido. Tente novamente.");
             System.out.print("Novo local: ");
             novoLocal = scan.nextLine();
@@ -180,4 +153,5 @@ public class Reserva {
         this.local = novoLocal;
         System.out.println("Local alterado com sucesso!");
     }
+
 }
