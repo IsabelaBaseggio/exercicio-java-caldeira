@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/aula02/Exercicio07/AdivinhaQuantidadeSoldadoInimigo/AdivinhaQuantidadeSoldadoInimigo.iml" filepath="$PROJECT_DIR$/aula02/Exercicio07/AdivinhaQuantidadeSoldadoInimigo/AdivinhaQuantidadeSoldadoInimigo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aula06/exercicio03/Agenda/Agenda.iml" filepath="$PROJECT_DIR$/aula06/exercicio03/Agenda/Agenda.iml" />
       <module fileurl="file://$PROJECT_DIR$/aula05/Exercicio01/Array5Numeros/Array5Numeros.iml" filepath="$PROJECT_DIR$/aula05/Exercicio01/Array5Numeros/Array5Numeros.iml" />
       <module fileurl="file://$PROJECT_DIR$/aula03/Exercicio01/Banco/Banco.iml" filepath="$PROJECT_DIR$/aula03/Exercicio01/Banco/Banco.iml" />
       <module fileurl="file://$PROJECT_DIR$/aula01/Exercicio13/CalculaFatorial/CalculaFatorial.iml" filepath="$PROJECT_DIR$/aula01/Exercicio13/CalculaFatorial/CalculaFatorial.iml" />
@@ -20,6 +21,7 @@
       <module fileurl="file://$PROJECT_DIR$/aula01/Exercicio02/Imprime2Numeros/Imprime2Numeros.iml" filepath="$PROJECT_DIR$/aula01/Exercicio02/Imprime2Numeros/Imprime2Numeros.iml" />
       <module fileurl="file://$PROJECT_DIR$/aula01/Exercicio01/LeEImprimeNome/LeEImprimeNome.iml" filepath="$PROJECT_DIR$/aula01/Exercicio01/LeEImprimeNome/LeEImprimeNome.iml" />
       <module fileurl="file://$PROJECT_DIR$/aula05/Exercicio04/ListaDeCompras/ListaDeCompras.iml" filepath="$PROJECT_DIR$/aula05/Exercicio04/ListaDeCompras/ListaDeCompras.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aula06/exercicio04/ListaDeProdutos/ListaDeProdutos.iml" filepath="$PROJECT_DIR$/aula06/exercicio04/ListaDeProdutos/ListaDeProdutos.iml" />
       <module fileurl="file://$PROJECT_DIR$/aula05/Exercicio06/ListaDeReservas/ListaDeReservas.iml" filepath="$PROJECT_DIR$/aula05/Exercicio06/ListaDeReservas/ListaDeReservas.iml" />
       <module fileurl="file://$PROJECT_DIR$/aula05/Exercicio03/ListaDeTarefas/ListaDeTarefas.iml" filepath="$PROJECT_DIR$/aula05/Exercicio03/ListaDeTarefas/ListaDeTarefas.iml" />
       <module fileurl="file://$PROJECT_DIR$/aula03/Exercicio02/Main/Main.iml" filepath="$PROJECT_DIR$/aula03/Exercicio02/Main/Main.iml" />
