@@ -2,20 +2,38 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/aula02/Exercicio07/AdivinhaQuantidadeSoldadoInimigo/AdivinhaQuantidadeSoldadoInimigo.iml" filepath="$PROJECT_DIR$/aula02/Exercicio07/AdivinhaQuantidadeSoldadoInimigo/AdivinhaQuantidadeSoldadoInimigo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aula06/exercicio03/Agenda/Agenda.iml" filepath="$PROJECT_DIR$/aula06/exercicio03/Agenda/Agenda.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aula05/Exercicio01/Array5Numeros/Array5Numeros.iml" filepath="$PROJECT_DIR$/aula05/Exercicio01/Array5Numeros/Array5Numeros.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aula03/Exercicio01/Banco/Banco.iml" filepath="$PROJECT_DIR$/aula03/Exercicio01/Banco/Banco.iml" />
       <module fileurl="file://$PROJECT_DIR$/aula01/Exercicio13/CalculaFatorial/CalculaFatorial.iml" filepath="$PROJECT_DIR$/aula01/Exercicio13/CalculaFatorial/CalculaFatorial.iml" />
       <module fileurl="file://$PROJECT_DIR$/aula01/Exercicio09/CalculaIdadeAnoNascimento/CalculaIdadeAnoNascimento.iml" filepath="$PROJECT_DIR$/aula01/Exercicio09/CalculaIdadeAnoNascimento/CalculaIdadeAnoNascimento.iml" />
-      <module fileurl="file://$PROJECT_DIR$/aula02/Exercicio02/Calculadora/Calculadora.iml" filepath="$PROJECT_DIR$/aula02/Exercicio02/Calculadora/Calculadora.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aula02/Exercicio04/Calculadora/Calculadora.iml" filepath="$PROJECT_DIR$/aula02/Exercicio04/Calculadora/Calculadora.iml" />
       <module fileurl="file://$PROJECT_DIR$/aula01/Exercicio10/CelsiusParaFahrenheit/CelsiusParaFahrenheit.iml" filepath="$PROJECT_DIR$/aula01/Exercicio10/CelsiusParaFahrenheit/CelsiusParaFahrenheit.iml" />
       <module fileurl="file://$PROJECT_DIR$/aula01/Exercicio07/Consorcio/Consorcio.iml" filepath="$PROJECT_DIR$/aula01/Exercicio07/Consorcio/Consorcio.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aula01/Exercicio11/ContadorDeVogais/ContadorDeVogais.iml" filepath="$PROJECT_DIR$/aula01/Exercicio11/ContadorDeVogais/ContadorDeVogais.iml" />
       <module fileurl="file://$PROJECT_DIR$/aula01/Exercicio12/ConversorDolarParaEuroOuReal/ConversorDolarParaEuroOuReal.iml" filepath="$PROJECT_DIR$/aula01/Exercicio12/ConversorDolarParaEuroOuReal/ConversorDolarParaEuroOuReal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aula02/Exercicio05/DivideString/DivideString.iml" filepath="$PROJECT_DIR$/aula02/Exercicio05/DivideString/DivideString.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aula04/Exercicio02/FigurasGeometricas/FigurasGeometricas.iml" filepath="$PROJECT_DIR$/aula04/Exercicio02/FigurasGeometricas/FigurasGeometricas.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aula05/Exercicio05/FilaDeImpressao/FilaDeImpressao.iml" filepath="$PROJECT_DIR$/aula05/Exercicio05/FilaDeImpressao/FilaDeImpressao.iml" />
       <module fileurl="file://$PROJECT_DIR$/aula01/Exercicio08/FilaPrioritaria/FilaPrioritaria.iml" filepath="$PROJECT_DIR$/aula01/Exercicio08/FilaPrioritaria/FilaPrioritaria.iml" />
       <module fileurl="file://$PROJECT_DIR$/aula01/HelloWorld/HelloWorld.iml" filepath="$PROJECT_DIR$/aula01/HelloWorld/HelloWorld.iml" />
       <module fileurl="file://$PROJECT_DIR$/aula01/Exercicio02/Imprime2Numeros/Imprime2Numeros.iml" filepath="$PROJECT_DIR$/aula01/Exercicio02/Imprime2Numeros/Imprime2Numeros.iml" />
       <module fileurl="file://$PROJECT_DIR$/aula01/Exercicio01/LeEImprimeNome/LeEImprimeNome.iml" filepath="$PROJECT_DIR$/aula01/Exercicio01/LeEImprimeNome/LeEImprimeNome.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aula05/Exercicio04/ListaDeCompras/ListaDeCompras.iml" filepath="$PROJECT_DIR$/aula05/Exercicio04/ListaDeCompras/ListaDeCompras.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aula05/Exercicio06/ListaDeReservas/ListaDeReservas.iml" filepath="$PROJECT_DIR$/aula05/Exercicio06/ListaDeReservas/ListaDeReservas.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aula05/Exercicio03/ListaDeTarefas/ListaDeTarefas.iml" filepath="$PROJECT_DIR$/aula05/Exercicio03/ListaDeTarefas/ListaDeTarefas.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aula03/Exercicio02/Main/Main.iml" filepath="$PROJECT_DIR$/aula03/Exercicio02/Main/Main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aula05/Exercicio02/NumerosAleatoriosAdivinha/NumerosAleatoriosAdivinha.iml" filepath="$PROJECT_DIR$/aula05/Exercicio02/NumerosAleatoriosAdivinha/NumerosAleatoriosAdivinha.iml" />
       <module fileurl="file://$PROJECT_DIR$/aula02/Exercicio01/NumerosPrimos/NumerosPrimos.iml" filepath="$PROJECT_DIR$/aula02/Exercicio01/NumerosPrimos/NumerosPrimos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aula06/Exercicio02/Pessoa/Pessoa.iml" filepath="$PROJECT_DIR$/aula06/Exercicio02/Pessoa/Pessoa.iml" />
       <module fileurl="file://$PROJECT_DIR$/aula01/Exercicio04/QuantidadeDeSalarioMinimoDoUsuario/QuantidadeDeSalarioMinimoDoUsuario.iml" filepath="$PROJECT_DIR$/aula01/Exercicio04/QuantidadeDeSalarioMinimoDoUsuario/QuantidadeDeSalarioMinimoDoUsuario.iml" />
       <module fileurl="file://$PROJECT_DIR$/aula01/Exercicio05/QuantidadeDeSegundos/QuantidadeDeSegundos.iml" filepath="$PROJECT_DIR$/aula01/Exercicio05/QuantidadeDeSegundos/QuantidadeDeSegundos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aula04/Exercicio03/SistemaDeTributacao/SistemaDeTributacao.iml" filepath="$PROJECT_DIR$/aula04/Exercicio03/SistemaDeTributacao/SistemaDeTributacao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aula06/Exercicio01/StackLivros/StackLivros.iml" filepath="$PROJECT_DIR$/aula06/Exercicio01/StackLivros/StackLivros.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aula02/Exercicio06/StringInvertida/StringInvertida.iml" filepath="$PROJECT_DIR$/aula02/Exercicio06/StringInvertida/StringInvertida.iml" />
       <module fileurl="file://$PROJECT_DIR$/aula01/Exercicio03/TresNumerosMediaMenorEMaior/TresNumerosMediaMenorEMaior.iml" filepath="$PROJECT_DIR$/aula01/Exercicio03/TresNumerosMediaMenorEMaior/TresNumerosMediaMenorEMaior.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aula04/Exercicio01/Veiculo/Veiculo.iml" filepath="$PROJECT_DIR$/aula04/Exercicio01/Veiculo/Veiculo.iml" />
       <module fileurl="file://$PROJECT_DIR$/aula01/Exercicio06/VerificaIdadeParaVotar/VerificaIdadeParaVotar.iml" filepath="$PROJECT_DIR$/aula01/Exercicio06/VerificaIdadeParaVotar/VerificaIdadeParaVotar.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/exercicios-java-caldeira.iml" filepath="$PROJECT_DIR$/.idea/exercicios-java-caldeira.iml" />
     </modules>
