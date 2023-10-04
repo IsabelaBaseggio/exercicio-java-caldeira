@@ -12,10 +12,10 @@ public class CalculaInteiros implements Calculavel{
     public double escolherOperacao() {
         Scanner scan = new Scanner(System.in);
         System.out.println("Escolha a operação que deseja realizar: \n" +
-                            "[1] SOMA \n" +
-                            "[2] SUBTRAÇÃO \n" +
-                            "[3] MULTIPLICAÇÃO \n" +
-                            "[4] DIVISÃO");
+                            "[1] " + OperacaoMatematica.SOMA + "\n" +
+                            "[2] "+ OperacaoMatematica.SUBTRACAO +" \n" +
+                            "[3] " + OperacaoMatematica.MULTIPLICACAO + " \n" +
+                            "[4] " + OperacaoMatematica.DIVISAO);
         System.out.print("Opção: ");
         try {
             int opcao = scan.nextInt();
