@@ -9,5 +9,8 @@
         <module name="ListaDeStrings" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="CalculadoraDeHipoteca" target="17" />
+    </bytecodeTargetLevel>
   </component>
 </project>
