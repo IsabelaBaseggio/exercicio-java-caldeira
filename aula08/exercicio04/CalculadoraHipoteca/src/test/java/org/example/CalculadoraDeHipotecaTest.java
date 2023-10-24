@@ -6,7 +6,7 @@ public class CalculadoraDeHipotecaTest {
     public CalculadoraDeHipoteca calculadoraDeHipoteca = new CalculadoraDeHipoteca();
 
     @Test
-    void calculaHipotacalMensalComJurosComSucesso(){
+    void calculaHipotacalMensalComJuros_ComSucesso(){
         double valorMensal;
         valorMensal = calculadoraDeHipoteca.calculaHipotecaMensalComJuros(200000,2,10);
         Assertions.assertEquals(1840.4, valorMensal);
@@ -16,7 +16,7 @@ public class CalculadoraDeHipotecaTest {
     }
 
     @Test
-    void calculaHipotecaMensalComJurosSemSucesso(){
+    void calculaHipotecaMensalComJuros_SemSucesso(){
         double valorMensal;
         valorMensal = calculadoraDeHipoteca.calculaHipotecaMensalComJuros(0,2,3);
         Assertions.assertEquals(0.0, valorMensal);
@@ -29,7 +29,7 @@ public class CalculadoraDeHipotecaTest {
     }
 
     @Test
-    void calculaHipotecalMensalSemJurosComSucesso(){
+    void calculaHipotecalMensalSemJuros_ComSucesso(){
         double valorMensal;
         valorMensal = calculadoraDeHipoteca.calculaHipotecaMensalSemJuros(200000, 10);
         Assertions.assertEquals(1666.67, valorMensal);
@@ -39,7 +39,7 @@ public class CalculadoraDeHipotecaTest {
     }
 
     @Test
-    void calculaHipotecaMensalSemJurosSemSucesso(){
+    void calculaHipotecaMensalSemJuros_SemSucesso(){
         double valorMensal;
         valorMensal = calculadoraDeHipoteca.calculaHipotecaMensalSemJuros(0, 3);
         Assertions.assertEquals(0.0, valorMensal);

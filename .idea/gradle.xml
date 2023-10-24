@@ -39,6 +39,15 @@
           </set>
         </option>
       </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/aula08/exercicio05/OperacaoNumero" />
+        <option name="gradleHome" value="" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/aula08/exercicio05/OperacaoNumero" />
+          </set>
+        </option>
+      </GradleProjectSettings>
     </option>
   </component>
 </project>
