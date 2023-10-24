@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.example.CalculadoraDeHipotecaTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2023-10-24T00:35:41" hostname="DESKTOP-DFAJJ7K" time="0.126">
+<testsuite name="org.example.CalculadoraDeHipotecaTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2023-10-24T01:41:45" hostname="DESKTOP-DFAJJ7K" time="0.066">
   <properties/>
-  <testcase name="calculaHipotecalMensalSemJurosComSucesso()" classname="org.example.CalculadoraDeHipotecaTest" time="0.002"/>
-  <testcase name="calculaHipotecaMensalComJurosSemSucesso()" classname="org.example.CalculadoraDeHipotecaTest" time="0.001"/>
-  <testcase name="calculaHipotacalMensalComJurosComSucesso()" classname="org.example.CalculadoraDeHipotecaTest" time="0.003"/>
-  <testcase name="calculaHipotecaMensalSemJurosSemSucesso()" classname="org.example.CalculadoraDeHipotecaTest" time="0.038"/>
+  <testcase name="calculaHipotacalMensalComJuros_ComSucesso()" classname="org.example.CalculadoraDeHipotecaTest" time="0.033"/>
+  <testcase name="calculaHipotecaMensalComJuros_SemSucesso()" classname="org.example.CalculadoraDeHipotecaTest" time="0.006"/>
+  <testcase name="calculaHipotecaMensalSemJuros_SemSucesso()" classname="org.example.CalculadoraDeHipotecaTest" time="0.006"/>
+  <testcase name="calculaHipotecalMensalSemJuros_ComSucesso()" classname="org.example.CalculadoraDeHipotecaTest" time="0.005"/>
   <system-out><![CDATA[Os valores informados precisam ser positivos
 Os valores informados precisam ser positivos
 Os valores informados precisam ser positivos

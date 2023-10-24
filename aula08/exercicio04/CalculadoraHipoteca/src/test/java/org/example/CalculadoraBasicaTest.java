@@ -80,6 +80,6 @@ public class CalculadoraBasicaTest {
         Assertions.assertEquals(16, potencia);
 
         potencia = calculadora.potencia(4, -2);
-        Assertions.assertEquals(0.06, potencia);
+        Assertions.assertEquals(0.0625, potencia);
     }
 }

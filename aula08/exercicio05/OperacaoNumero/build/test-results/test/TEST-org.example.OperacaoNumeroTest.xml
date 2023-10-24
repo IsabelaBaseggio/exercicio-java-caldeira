@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.example.OperacaoNumeroTest" tests="22" skipped="0" failures="0" errors="0" timestamp="2023-10-24T01:40:03" hostname="DESKTOP-DFAJJ7K" time="0.143">
+  <properties/>
+  <testcase name="ehPar_ComZero()" classname="org.example.OperacaoNumeroTest" time="0.049"/>
+  <testcase name="testEhPar_ComParNegativo()" classname="org.example.OperacaoNumeroTest" time="0.002"/>
+  <testcase name="calcularFibonacci_IndiceNegativo()" classname="org.example.OperacaoNumeroTest" time="0.006"/>
+  <testcase name="ehPalindromo_Palindromo()" classname="org.example.OperacaoNumeroTest" time="0.007"/>
+  <testcase name="calcularFibonacci_IndiceGrande()" classname="org.example.OperacaoNumeroTest" time="0.002"/>
+  <testcase name="ehPar_ComParPositivo()" classname="org.example.OperacaoNumeroTest" time="0.004"/>
+  <testcase name="somarNumeros_SemElementos()" classname="org.example.OperacaoNumeroTest" time="0.001"/>
+  <testcase name="calcularFatorial_NumeroPositivo()" classname="org.example.OperacaoNumeroTest" time="0.001"/>
+  <testcase name="ehPalindromo_CaracteresEspeciais()" classname="org.example.OperacaoNumeroTest" time="0.001"/>
+  <testcase name="calcularFibonacci_IndiceZero()" classname="org.example.OperacaoNumeroTest" time="0.002"/>
+  <testcase name="calcularFatorial_NumeroNegativo()" classname="org.example.OperacaoNumeroTest" time="0.003"/>
+  <testcase name="calcularFibonacci_IndicePequeno()" classname="org.example.OperacaoNumeroTest" time="0.001"/>
+  <testcase name="somarNumeros_ComElementosPositivos()" classname="org.example.OperacaoNumeroTest" time="0.001"/>
+  <testcase name="ehPalindromo_PalindromoVazio()" classname="org.example.OperacaoNumeroTest" time="0.002"/>
+  <testcase name="calcularFibonacci_IndiceUm()" classname="org.example.OperacaoNumeroTest" time="0.002"/>
+  <testcase name="ehPar_ComImparPositivo()" classname="org.example.OperacaoNumeroTest" time="0.002"/>
+  <testcase name="calcularFatorial_NumeroZero()" classname="org.example.OperacaoNumeroTest" time="0.002"/>
+  <testcase name="ehPalindromo_NaoPalindromo()" classname="org.example.OperacaoNumeroTest" time="0.002"/>
+  <testcase name="ehPar_ComImparNegativo()" classname="org.example.OperacaoNumeroTest" time="0.002"/>
+  <testcase name="somarNumeros_ComElementosNegativos()" classname="org.example.OperacaoNumeroTest" time="0.002"/>
+  <testcase name="somarNumeros_ComElementosPositivosENegativos()" classname="org.example.OperacaoNumeroTest" time="0.002"/>
+  <testcase name="calcularFatorial_NumeroUm()" classname="org.example.OperacaoNumeroTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
