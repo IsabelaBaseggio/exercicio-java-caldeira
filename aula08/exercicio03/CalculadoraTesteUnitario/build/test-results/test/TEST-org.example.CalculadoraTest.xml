@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.example.CalculadoraTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2023-10-23T18:22:39" hostname="DESKTOP-DFAJJ7K" time="0.113">
+<testsuite name="org.example.CalculadoraTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2023-10-24T00:27:37" hostname="DESKTOP-DFAJJ7K" time="0.139">
   <properties/>
   <testcase name="multiplicacaoComSucesso()" classname="org.example.CalculadoraTest" time="0.049"/>
-  <testcase name="potenciaComSucesso()" classname="org.example.CalculadoraTest" time="0.005"/>
-  <testcase name="subtracaoComSucesso()" classname="org.example.CalculadoraTest" time="0.005"/>
-  <testcase name="raizQuadradaComSucesso()" classname="org.example.CalculadoraTest" time="0.008"/>
-  <testcase name="divisaoComSucesso()" classname="org.example.CalculadoraTest" time="0.004"/>
-  <testcase name="somarComSucesso()" classname="org.example.CalculadoraTest" time="0.006"/>
+  <testcase name="potenciaComSucesso()" classname="org.example.CalculadoraTest" time="0.004"/>
+  <testcase name="subtracaoComSucesso()" classname="org.example.CalculadoraTest" time="0.015"/>
+  <testcase name="raizQuadradaComSucesso()" classname="org.example.CalculadoraTest" time="0.018"/>
+  <testcase name="divisaoComSucesso()" classname="org.example.CalculadoraTest" time="0.025"/>
+  <testcase name="somarComSucesso()" classname="org.example.CalculadoraTest" time="0.002"/>
   <system-out><![CDATA[O radicando precisa ser maior que 0
 O radicando precisa ser maior que 0
 O divisor precisa ser diferente de 0
