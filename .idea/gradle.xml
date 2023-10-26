@@ -47,6 +47,14 @@
           </set>
         </option>
       </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/aula10/restservice" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/aula10/restservice" />
+          </set>
+        </option>
+      </GradleProjectSettings>
     </option>
   </component>
 </project>
