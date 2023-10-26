@@ -11,6 +11,8 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="CalculadoraDeHipoteca" target="17" />
+      <module name="CalculadoraDeHipoteca.main" target="17" />
+      <module name="CalculadoraDeHipoteca.test" target="17" />
     </bytecodeTargetLevel>
   </component>
 </project>

@@ -22,15 +22,6 @@
         </option>
       </GradleProjectSettings>
       <GradleProjectSettings>
-        <option name="externalProjectPath" value="$PROJECT_DIR$/aula08/exercicio04/CalculadoraDeHipoteca" />
-        <option name="gradleHome" value="" />
-        <option name="modules">
-          <set>
-            <option value="$PROJECT_DIR$/aula08/exercicio04/CalculadoraDeHipoteca" />
-          </set>
-        </option>
-      </GradleProjectSettings>
-      <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/aula08/exercicio04/CalculadoraHipoteca" />
         <option name="gradleHome" value="" />
         <option name="modules">
@@ -45,6 +36,14 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/aula08/exercicio05/OperacaoNumero" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/aula10/initial" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/aula10/initial" />
           </set>
         </option>
       </GradleProjectSettings>
