@@ -40,18 +40,10 @@
         </option>
       </GradleProjectSettings>
       <GradleProjectSettings>
-        <option name="externalProjectPath" value="$PROJECT_DIR$/aula10/initial" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/aula10/restful" />
         <option name="modules">
           <set>
-            <option value="$PROJECT_DIR$/aula10/initial" />
-          </set>
-        </option>
-      </GradleProjectSettings>
-      <GradleProjectSettings>
-        <option name="externalProjectPath" value="$PROJECT_DIR$/aula10/restservice" />
-        <option name="modules">
-          <set>
-            <option value="$PROJECT_DIR$/aula10/restservice" />
+            <option value="$PROJECT_DIR$/aula10/restful" />
           </set>
         </option>
       </GradleProjectSettings>

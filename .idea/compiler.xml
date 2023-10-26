@@ -13,6 +13,12 @@
       <module name="CalculadoraDeHipoteca" target="17" />
       <module name="CalculadoraDeHipoteca.main" target="17" />
       <module name="CalculadoraDeHipoteca.test" target="17" />
+      <module name="rest-service" target="17" />
+      <module name="rest-service.main" target="17" />
+      <module name="rest-service.test" target="17" />
+      <module name="restservice" target="17" />
+      <module name="restservice.main" target="17" />
+      <module name="restservice.test" target="17" />
     </bytecodeTargetLevel>
   </component>
 </project>
