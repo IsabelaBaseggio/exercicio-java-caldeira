@@ -50,7 +50,7 @@ INSERT INTO produtos (nome, preco, categoria) VALUES
 INSERT INTO pedidos (data_pedido, valor_total, id_cliente) VALUES
     ('2023-10-10', 120.00, 1),
     ('2023-10-11', 200.00, 2),
-    ('2023-10-12', 150.00, 3),
+    ('2023-2-12', 150.00, 3),
     ('2023-10-13', 180.00, 4),
     ('2023-10-14', 250.00, 5),
 	('2023-11-09', 80.00, 1),
@@ -145,14 +145,19 @@ SELECT produtos.nome, COUNT(detalhes_do_pedido.id_pedido) AS total_pedidos
 
 -- Crie uma consulta que calcule a média, a mediana e o desvio padrão dos preços dos produtos na tabela "Produtos".
 
--- FAZER
+SELECT
+    AVG(preco) AS media_precos,
+    PERCENTILE_CONT(0.5) WITHIN GROUP (ORDER BY preco) AS mediana_precos,
+    STDDEV(preco) AS desvio_padrao_precos
+		FROM produtos;
 
 -- Selecione todos os pedidos feitos em um período de tempo específico, usando a tabela "Pedidos" e um intervalo de datas.
 SELECT * FROM pedidos WHERE data_pedido BETWEEN '2023-10-14' AND '2023-11-09';
 
 -- Crie uma consulta que identifique os clientes que não fizeram nenhum pedido nos últimos 6 meses na tabela "Clientes" e "Pedidos".
 
--- FAZER
+SELECT clientes.* FROM clientes LEFT JOIN pedidos ON clientes.id_cliente = pedidos.id_cliente 
+	WHERE pedidos.id_pedido IS NULL OR pedidos.data_pedido < CURRENT_DATE - INTERVAL '6 months';
 
 -- Crie uma consulta que classifique os produtos na tabela "Produtos" com base em seu preço, em ordem decrescente.
 SELECT * FROM produtos ORDER BY preco DESC;
@@ -163,3 +168,18 @@ SELECT produtos.categoria, SUM(produtos.preco * detalhes_do_pedido.quantidade)
 	FROM produtos, detalhes_do_pedido
 	WHERE produtos.id_produto = detalhes_do_pedido.id_produto
 	GROUP BY produtos.categoria;
+	
+-- LEVEL 4
+
+-- Faça um UPDATE sem a clausula WHERE numa tabela e vê o que acontece;
+UPDATE clientes SET telefone = '123456789';
+
+-- TENTE fazer um rollback;
+BEGIN;
+UPDATE clientes SET telefone = '987654321';
+ROLLBACK;
+COMMIT;
+
+-- Delete uma tabela e faça SELECT;
+DROP TABLE funcionarios;
+SELECT * FROM funcionarios;
